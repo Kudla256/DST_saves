@@ -1,0 +1,22 @@
+﻿<Window x:Class="UserInterface.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserInterface"
+        mc:Ignorable="d"
+        Title="DST saves" Height="450" Width="300" ResizeMode="NoResize"
+        Closed="Window_Closed">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button x:Name="SaveButton" Grid.Row="0" Width="250" Height="60" Content="Save game data" FontSize="20" Click="SaveChanges"/>
+        <Button x:Name="ChooseSaveButton" Grid.Row="1" Width="250" Height="60" Content="Choose save" FontSize="20" Click="ChooseSave" />
+        <Button x:Name="RevertChangesButton" Grid.Row="2" Width="250" Height="60" Content="Revert changes" FontSize="20" Click="RevertChanges" />
+        <TextBlock x:Name="InstructionBlock" Grid.Row="3" Margin="10" >some text</TextBlock>
+    </Grid>
+</Window>
