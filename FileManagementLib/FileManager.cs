@@ -24,7 +24,6 @@ namespace FileManagementLib
         private string savesPath;
         private string backUpPath;
 
-
         private static FileManager instance;
         private FileManager()
         {
@@ -66,6 +65,7 @@ namespace FileManagementLib
             }
             return Comand.None;
         }
+
         public void SaveChanges()
         {
             StaticSaveChanges(gamePath, savesPath);
@@ -194,10 +194,5 @@ namespace FileManagementLib
             }
         }
         
-        
-        public static string GetOpenDirictoryName()
-        {
-            return String.Empty;
-        }
     }
 }

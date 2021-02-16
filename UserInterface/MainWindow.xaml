@@ -17,6 +17,6 @@
         <Button x:Name="SaveButton" Grid.Row="0" Width="250" Height="60" Content="Save game data" FontSize="20" Click="SaveChanges"/>
         <Button x:Name="ChooseSaveButton" Grid.Row="1" Width="250" Height="60" Content="Choose save" FontSize="20" Click="ChooseSave" />
         <Button x:Name="RevertChangesButton" Grid.Row="2" Width="250" Height="60" Content="Revert changes" FontSize="20" Click="RevertChanges" />
-        <TextBlock x:Name="InstructionBlock" Grid.Row="3" Margin="10" >some text</TextBlock>
+        <TextBlock x:Name="InstructionBlock" Grid.Row="3" Margin="10" ></TextBlock>
     </Grid>
 </Window>
